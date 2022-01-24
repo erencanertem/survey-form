@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>FCC : SurveyForm Page</title>
+</head>
+
+<body>
+
+    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+    <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+    <div class="container">
+        <form id="survey-form">
+            
+            <div class="form-item">
+                <label id="name-label" for="name">Name</label>
+                <input class="form-control" id="name" type="text" required placeholder="Enter your Name">
+            </div>
+            <div class="form-item">
+                <label id="email-label" for="email">Email</label>
+                <input class="form-control" id="email" type="email" required placeholder="Enter your E-mail">
+            </div>
+            <div class="form-item">
+                <label id="number-label" for="name">Age<span class="opt">(optional)</span></label>
+                <input class="form-control" id="number" type="number" min="10" max="99" placeholder="Enter your Age">
+            </div>
+
+            <div class="form-item" style="width: 100%;">
+                <p>Which option best describes your current role?</p>
+                <select class="form-control" name="role" id="dropdown">
+                    <option selected disabled value>Select Current Role</option>
+                    <option value="student">Student</option>
+                    <option value="ft">Full Time Job</option>
+                    <option value="Ftlearner">Full Time Learner</option>
+                    <option value="Pno">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <input type="radio" name="recommend" value="definitely">
+                    Definitely
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="maybe">
+                    Maybe
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="not-sure">
+                    Not Sure
+                </label>
+            </div>
+
+            <div class="form-item">
+                <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                <label>
+                    <input type="checkbox" value="front-end-projects" class="checkbox">
+                    Front-End Projects
+                </label>
+                <label>
+                    <input type="checkbox" value="back-end-projects">
+                    Back-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" value="javascript">
+                    Javascript
+                </label>
+                <label>
+                    <input type="checkbox" value="css">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" value="grid-flexbox">
+                    Grid/Flexbox
+                </label>
+            </div>
+
+            <div class="form-item">
+                <p>
+                    Any comments or suggestions?
+                </p>
+                <textarea class="" name="comments" id="" placeholder="Your Comments"></textarea>
+            </div>
+
+            <div class="form-item">
+                <button class="submit-btn" type="submit" id="submit">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
